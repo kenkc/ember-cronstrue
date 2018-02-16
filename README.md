@@ -1,26 +1,26 @@
-# ember-cronstrue
+# Ember cRonstrue
 
-This README outlines the details of collaborating on this Ember addon.
+This Ember CLI addon is a simple wrapper for [cRonstue](https://github.com/bradymholt/cRonstrue/) (v1.1.0).
 
-## Installation
+### Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-cronstrue`
-* `npm install`
+```
+$ ember install ember-cronstrue
+```
 
-## Running
+### Usage
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+In your handlebars template just do:
 
-## Running Tests
+```
+{{ember-cronstrue cron-expression}}
+```
+#### Example
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
+```
+{{ember-cronstrue '0/5 * * * * *'}}
+```
 
-## Building
+#### More Resources
 
-* `ember build`
-
-For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+* [cRonstrue demo page](http://bradymholt.github.io/cRonstrue/)
