@@ -16,3 +16,11 @@ test('it renders correctly', function(assert) {
 
   assert.equal(this.$().text().trim(), 'Every 5 minutes');
 });
+
+test('it renders french correctly', function(assert) {
+  this.set('inputValue', '*/5 * * * *');
+
+  this.render(hbs `{{ember-cronstrue inputValue 'fr'}}`);
+
+  assert.equal(this.$().text().trim(), 'Toutes les 5 minutes');
+});
